@@ -1,0 +1,87 @@
+
+	
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    
+</head>
+	<div class="section">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Log In</h4>
+											<form>	
+											<div class="form-group">
+												<input type="email" [(ngModel)]="pharmacien.email_util"  name="email_util" class="form-style" placeholder="Your Email" id="email_util" autocomplete="off">
+												<i class="input-icon uil uil-at"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password"  [(ngModel)]="pharmacien.password" name="password" class="form-style" placeholder="Your Password" id="password" autocomplete="off">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<div>
+											<a (click)=userLogin()  class="btn mt-4">submit</a>
+											</div>
+										</form>	
+				      					</div>
+										
+			      					</div>
+
+										
+			      				</div>
+							
+								<div class="card-back">
+									<div class="center-wrap">
+									
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Sign Up</h4>
+											
+											<div class="form-group">
+											
+												<input type="text" [(ngModel)]="pharmacien.nom_util"   name="nom_util" class="form-style" placeholder="Your Full Name" id="nom_util " autocomplete="off">
+												<i class="input-icon uil uil-user"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="email"   [(ngModel)]="pharmacien.email_util" name="email_util" class="form-style" placeholder="Your Email" id="email_util" autocomplete="off">
+												<i class="input-icon uil uil-at"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password" [(ngModel)]="pharmacien.password" name="password" class="form-style" placeholder="Your Password" id="password" autocomplete="off">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+										
+											<a (click)=userRegister()  class="btn mt-4">submit</a>
+											
+				      					</div>
+									
+			      					</div>
+			      				</div>
+								 
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+	      	</div>
+	    </div>
+	</div>
+</html>
